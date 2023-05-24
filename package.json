@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  
   "scripts": {
     "test": "npx wdio run ./wdio.conf.js",
-    "wdio": "wdio run ./wdio.conf.js"
+    "wdio": "wdio run ./wdio.conf.js",
+    "report": "npx allure open allure-report"
   },
   "keywords": [],
   "author": "",
@@ -17,5 +19,10 @@
     "@wdio/spec-reporter": "^8.10.2",
     "chromedriver": "^113.0.0",
     "wdio-chromedriver-service": "^8.1.1"
+  },
+  "dependencies": {
+    "@wdio/allure-reporter": "^8.10.4",
+    "allure-commandline": "^2.22.0",
+    "wdio-video-reporter": "^4.0.2"
   }
 }
